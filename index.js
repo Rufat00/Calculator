@@ -16,11 +16,20 @@ window.onload= ()=>{
     }
 }
 
+function inputChange(){
+    inputSave()
+    if (document.form.textview.value == ""){
+        cleanB.innerHTML="";
+        cleanB.insertAdjacentText('beforeend','AC')
+    }
+    else{
+        cleanB.innerHTML="";
+        cleanB.insertAdjacentText('beforeend','C')
+    }
+}
+
 function insert(num){
     document.form.textview.value = document.form.textview.value + num;
-    cleanB.innerHTML="";
-    cleanB.insertAdjacentText('beforeend','C')
-    inputSave()
 }
 function clean(){
     document.form.textview.value = ""; 
@@ -56,22 +65,9 @@ function back(){
         cleanB.innerHTML="";
         cleanB.insertAdjacentText('beforeend','C')
     }
-    inputSave()
-    if(document.form.textview.value == null){
-        localStorage.setItem('inputData','')
-    }
 }
 function sqrt(){
     document.form.textview.value = Math.sqrt(eval(document.form.textview.value));
-    if (document.form.textview.value == ""){
-        cleanB.innerHTML="";
-        cleanB.insertAdjacentText('beforeend','AC')
-    }
-    else{
-        cleanB.innerHTML="";
-        cleanB.insertAdjacentText('beforeend','C')
-    }
-    inputSave()
 }
 function fact(n){
     let fac = 1
@@ -84,7 +80,6 @@ function fact(n){
 }
 function facto(){
     fact(+eval(document.form.textview.value))
-    inputSave()
 }
 
 function equal(){
@@ -106,21 +101,12 @@ function equal(){
         vv.append(newElement);
         save();
         historySave();
-        inputSave();
         if(document.form.textview.value == null){
             localStorage.setItem('inputData','')
         }
     }
     else{
         pass
-    }
-    if (document.form.textview.value == ""){
-        cleanB.innerHTML="";
-        cleanB.insertAdjacentText('beforeend','AC')
-    }
-    else{
-        cleanB.innerHTML="";
-        cleanB.insertAdjacentText('beforeend','C')
     }
 }
 
@@ -171,14 +157,6 @@ function show(){
             <div class="btn mainM" onclick="equal()">=</div>`
         );
         cleanB = document.querySelector('#cleanBtn')
-        if (document.form.textview.value == ""){
-            cleanB.innerHTML="";
-            cleanB.insertAdjacentText('beforeend','AC')
-        }
-        else{
-            cleanB.innerHTML="";
-            cleanB.insertAdjacentText('beforeend','C')
-        }
         main.classList.add('showM')
     }
     else{
@@ -211,15 +189,6 @@ function show(){
             <div class="btn"onclick="insert('.')">,</div>
             <div class="btn mainM" onclick="equal()">=</div>`);
             cleanB = document.querySelector('#cleanBtn')
-        
-            if (document.form.textview.value == ""){
-                cleanB.innerHTML="";
-                cleanB.insertAdjacentText('beforeend','AC')
-            }
-            else{
-                cleanB.innerHTML="";
-                cleanB.insertAdjacentText('beforeend','C')
-            }
         }
         cleanB = document.querySelector('#cleanBtn')
 }
