@@ -1,0 +1,14 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Calc from Rufat",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Rufat",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.0"
+  }
+}

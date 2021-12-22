@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "calibri";
+    user-select: none;
+    outline: none;
+}
+header{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    margin-bottom: 2%;
+}
+nav{
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.cat{
+    width: 80%;
+    margin: auto;
+    margin-left: 20%;
+}
+.settings{
+    z-index: 2;
+    padding: 9px 5px;
+    font-size: 25px;
+    transition: color 0.5s;
+}
+.settings:hover{
+    color: #1098f3;
+    transition: color 0.5s;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px 15px;
+}
+nav li a{
+    transition: color 0.5s;
+}
+nav li a:hover{
+    color: #1098f3;
+    transition: color 0.5s;
+}
+a{
+    color: #525252;
+    text-decoration: none;
+}
+.selected{
+    color: #1098f3;
+}
+.settingsMenuset{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    pointer-events: none;
+}
+.settingsMenu{
+    position: absolute;
+    list-style: none;
+    z-index: 1;
+    font-size: 15px;
+    right: 3%;
+    top: 7%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(58, 58, 58, 0.4);
+    padding: 2% 5%;
+    border-radius: 5px;
+    display: none;
+    pointer-events: none;
+}
+.settingsMenu li{
+    margin-top: 3%;
+    transition: color 0.5s;
+}
+.settingsMenu a:hover{
+    color: #1098f3;
+    transition: color 0.5s;
+}
+.settingsMenu.showSm{
+    display: block;
+    pointer-events: all;
+}
+.settingsMenuset.showSm{
+    display: block;
+    pointer-events: all;
+}
+main{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    padding: 5%;
+}
+.block{
+    height: 70px;
+    width: 70px;
+    padding: 5%;
+    text-align: center;
+    transition: background 0.3s;
+}
+.block:hover{
+    background: rgb(200, 200, 200);
+    transition: background 0.3s;
+}
+.block i{
+    font-size: 30px;
+}

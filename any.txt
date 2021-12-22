@@ -1,0 +1,48 @@
+<div class="leftXX">
+                    <div class="btn" onclick="insert('(')">(</div>
+                        <div class="btn"onclick="insert(')')">)</div>
+                        <div class="btn " onclick="insert('π')">π</div>
+                        <div class="btn"onclick="insert('^')">ⅹ^</div>
+                        <div class="btn"onclick="insert('!')">ⅹ!</div>
+                        <div class="btn"onclick="insert('^(-1)')">⅟ⅹ</div>
+                </div>
+                <div class="mainB">
+                    <div class="xx">
+                        <div class="btn" onclick="insert('(')">(</div>
+                        <div class="btn"onclick="insert(')')">)</div>
+                        <div class="btn " onclick="insert('π')">π</div>
+                        <div class="btn"onclick="insert('^')">ⅹ^</div>
+                        <div class="btn"onclick="insert('!')">ⅹ!</div>
+                        <div class="btn"onclick="insert('^(-1)')">⅟ⅹ</div>
+                    </div>
+                    <div class="block">
+                        <div class="btn main" onclick="clean()">c</div>
+                        <div class="btn main" onclick="back()">«</div>
+                        <div class="btn main" onclick="insert('%')">%</div>
+                        <div class="btn main"onclick="insert('÷')">÷</div>
+                    </div>
+                    <div class="block">
+                        <div class="btn"onclick="insert('7')">7</div>
+                        <div class="btn"onclick="insert('8')">8</div>
+                        <div class="btn"onclick="insert('9')">9</div>
+                        <div class="btn main"onclick="insert('×')">×</div>
+                    </div>
+                    <div class="block">
+                        <div class="btn"onclick="insert('4')">4</div>
+                        <div class="btn"onclick="insert('5')">5</div>
+                        <div class="btn"onclick="insert('6')">6</div>
+                        <div class="btn main"onclick="insert('-')">-</div>
+                    </div>
+                    <div class="block">
+                        <div class="btn"onclick="insert('1')">1</div>
+                        <div class="btn"onclick="insert('2')">2</div>
+                        <div class="btn"onclick="insert('3')">3</div>
+                        <div class="btn main"onclick="insert('+')">+</div>
+                    </div>
+                    <div class="block">
+                        <div class="btn main" onclick="show()"><i class='bx bx-grid-alt'></i></div>
+                        <div class="btn"onclick="insert('0')">0</div>
+                        <div class="btn"onclick="insert('.')">,</div>
+                        <div class="btn mainM" onclick="equal()">=</div>
+                    </div>
+                </div>

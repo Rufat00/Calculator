@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "calibri";
+}
+header{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 2%;
+}
+header a{
+    position: absolute;
+    left: 5%;
+    color: black;
+    font-size: 30px;
+    margin-top: 1.5%;
+}
+.cleanBtn{
+    position: absolute;
+    right: 5%;
+    font-size: 25px;
+    margin-top: 1.5%;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.cleanBtn:hover{
+    transform: scale(1);
+}
+.historyValue{
+    position: relative;
+    height: 450px;
+}
+.historyVv{
+    text-align: right;
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    width: 90%;
+    font-size: 20px;
+    opacity: 0.6;
+    max-height: 97%;
+    overflow:auto ;
+}
+.historyVv p{
+    user-select: text;
+    margin-right: 3%;
+    padding-top: 3%;
+}
+.historyVv::-webkit-scrollbar{
+    width: 1px;
+    background: none;
+}
+.historyVv::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 2px;
+}
+footer{
+    border-top: 1px solid black;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.footer{
+    position: absolute;
+    font-size: 25px;
+    right: 5%;
+    top: 40%;
+    text-align: right;
+    user-select: text;
+    border: none;
+}

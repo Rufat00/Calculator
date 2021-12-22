@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="C:\Users\Tech Evo Computers\Documents\Js\calculator\category.html"><i class='bx bx-chevron-left' ></i></a>
+        <h2>Data convert</h2>
+    </header>
+    <div class="inputBlock">
+        <div class="iSblock"><span class="ia iSelected"><h3>GB</h3><i class='bx bx-chevron-down' style="font-size: 20px;"></i></span><div><input type="text" readonly placeholder="0" class="a selected"></div></div>
+        <div class="iSblock"><span class="ib"><h3>MB</h3><i class='bx bx-chevron-down' style="font-size: 20px;"></i></span><div><input type="text" readonly placeholder="0" class="b notSelected"></div></div>
+    </div>
+    <div class="calc">
+        <div class="btn btn1" onclick="insert('7'); data()">7</div>
+        <div class="btn btn2"onclick="insert('8'); data()">8</div>
+        <div class="btn btn3"onclick="insert('9'); data()">9</div>
+        <div class="btn btn4" onclick="clean()">AC</div>
+        <div class="btn btn5"onclick="insert('4'); data()">4</div>
+        <div class="btn btn6"onclick="insert('5'); data()">5</div>
+        <div class="btn btn7"onclick="insert('6'); data()">6</div>
+        <div class="btn btn8"onclick="insert('1'); data()">1</div>
+        <div class="btn btn9"onclick="insert('2'); data()">2</div>
+        <div class="btn btn10"onclick="insert('3'); data()">3</div>
+        <div class="btn btn11"onclick="back(); data()">«</div>
+        <div class="btn btn12"></div>
+        <div class="btn btn13"onclick="insert('0')">0</div>
+        <div class="btn btn14"onclick="insert('.')">,</div>
+    </div>
+    <div class="select">
+        <div class="selectWindow">
+            <h3>Choose a value</h3>
+            <ul>
+                <li onclick="innerValue('B'); data()">Byte B</li>
+                <li onclick="innerValue('KB'); data()">Kilobyte KB</li>
+                <li onclick="innerValue('MB')">Megabyte MB</li>
+                <li onclick="innerValue('GB')">Gigabyte GB</li>
+                <li onclick="innerValue('TB')">Terabyte TB</li>
+                <li onclick="innerValue('PB')">Petabyte PB</li>
+            </ul>
+            <div class="windowButton"><button type="button" id="cancel">Cancel</button></div>
+        </div>
+    </div>
+<script>
+    require('./render.js');
+</script>
+<script src="script.js"></script>
+<script src="data.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calcStyle.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="cat">
+                <ul>
+                    <li><a href="#"><i class='bx bxs-calculator selected' ></i></a></li>
+                    <li><a href="category.html"><i class='bx bx-category' ></i></a></li>
+                    <li><a href="moneyCategory.html"><i class='bx bx-dollar-circle' ></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#" class="settings"><i class=' bx bx-dots-vertical-rounded'></i></a>
+        <div class="settingsMenuset">
+            <ul class="settingsMenu">
+                <li><a href="#"><i class='bx bx-cog'></i> Settings</a></li>
+                <li><a href="windows/history.html"><i class='bx bx-history' ></i> History</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="clalc">
+        <div class="lastValues">
+            <div class="vv">
+
+            </div>
+        </div>
+        <div class="input">
+            <form name="form"><input name="textview" type="text" readonly placeholder="0"></form>
+        </div>
+        <div class="keyboard">
+            <div class="btn main" id="cleanBtn" onclick="rClean()">AC</div>
+            <div class="btn main" onclick="back()">«</div>
+            <div class="btn main" onclick="insert('%')" style="font-size: 25px;">%</div>
+            <div class="btn main"onclick="insert('÷')">÷</div>
+
+            <div class="btn"onclick="insert('7')">7</div>
+            <div class="btn"onclick="insert('8')">8</div>
+            <div class="btn"onclick="insert('9')">9</div>
+            <div class="btn main"onclick="insert('×')">×</div>
+
+            <div class="btn"onclick="insert('4')">4</div>
+            <div class="btn"onclick="insert('5')">5</div>
+            <div class="btn"onclick="insert('6')">6</div>
+            <div class="btn main"onclick="insert('-')">-</div>
+
+            <div class="btn"onclick="insert('1')">1</div>
+            <div class="btn"onclick="insert('2')">2</div>
+            <div class="btn"onclick="insert('3')">3</div>
+            <div class="btn main"onclick="insert('+')">+</div>
+
+            <div class="btn main" onclick="show()"><i class='bx bx-grid-alt'></i></div>
+            <div class="btn"onclick="insert('0')">0</div>
+            <div class="btn"onclick="insert('.')">,</div>
+            <div class="btn mainM" onclick="equal()">=</div>
+        </div>
+    </div>
+<script src="index.js"></script>
+<script src='programm.js'></script>
+<script>
+    require('render.js');
+</script>
+</body>
+</html>

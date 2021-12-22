@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "calibri";
+    outline: none;
+}
+header{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 2%;
+}
+header a{
+    position: absolute;
+    left: 5%;
+    color: black;
+    font-size: 30px;
+    margin-top: 1.5%;
+}
+.calc{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 7px;
+    column-gap: 5px;
+    width: 86%;
+    margin: auto;
+    border-top: 1px solid;
+    padding-top: 5%;
+}
+.btn{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: background 0.3s;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background: #dfdfdf;
+    transition: background 0.3s;
+}
+
+.btn1 { grid-area: 1 / 1 / 2 / 2; }
+.btn2 { grid-area: 1 / 2 / 2 / 3; }
+.btn3 { grid-area: 1 / 3 / 2 / 4; }
+.btn4 { grid-area: 1 / 4 / 3 / 5;height: 120px; color: #1098f3;background: #dfdfdf}
+.btn5 { grid-area: 2 / 1 / 3 / 2; }
+.btn6 { grid-area: 2 / 2 / 3 / 3; }
+.btn7 { grid-area: 2 / 3 / 3 / 4; }
+.btn8 { grid-area: 3 / 1 / 4 / 2; }
+.btn9 { grid-area: 3 / 2 / 4 / 3; }
+.btn10 { grid-area: 3 / 3 / 4 / 4; }
+.btn11 { grid-area: 3 / 4 / 5 / 5; height: 120px;color: #1098f3;background: #dfdfdf;}
+.btn12 { grid-area: 4 / 1 / 5 / 2; }
+.btn13 { grid-area: 4 / 2 / 5 / 3; }
+.btn14 { grid-area: 4 / 3 / 5 / 4; }
+.btn4:hover,.btn11:hover{
+    transform: scale(0.95);
+}
+.btn12:hover{
+    background: none;
+}
+.inputBlock{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+}
+.iSblock{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.iSblock span{
+    display: inline-flex;
+    cursor: pointer;
+}
+.iSblock i{
+    margin-top: 3%;
+}
+.iSblock input{
+    font-size: 22px;
+    text-align: right;
+    padding: 1%;
+    padding-right: 2%;
+    border: none;
+    user-select: text;
+}
+.iSblock input::placeholder{
+    color: black;
+    opacity: 1;
+}
+.selected{
+    color: #1098f3;
+}
+.iSblock input.selected::placeholder{
+    color: #1098f3;
+}
+.select{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    pointer-events: none;
+}
+.select.show{
+    display: block;
+    pointer-events: all;
+}
+.select.show ~ .iSelected{
+    color: #1098f3;
+}
+.selectWindow{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    height: 60%;
+    width: 100%;
+    background: white;
+    border-radius: 20px 20px 0 0;
+}
+.selectWindow h3{
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.selectWindow ul{
+    margin-top: 1%;
+    font-size: 18px;
+}
+.selectWindow li{
+    padding-left: 8%;
+    padding-top: 2.1%;
+    padding-bottom: 2.1%;
+    list-style: none;
+    cursor: pointer;
+}
+.windowButton{
+    text-align: center;
+}
+.windowButton button{
+    margin-top: 3%;
+    font-size: 18px;
+    padding: 2%;
+    width:90%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.selectWindow li:hover{
+    background: #dfdfdf;
+}
+.windowButton button:hover{
+    background: #dfdfdf;
+}

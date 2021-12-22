@@ -1,0 +1,99 @@
+.keyboard{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    gap: 10% 10%;
+    color: black;
+    height: 100px;
+    max-width: 80%;
+    margin: auto;
+    font-family: "Calibri";
+    margin-top: 1.5%;
+}
+.keyboard.showM{
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    gap: 7% 4%;
+    max-width: 86%;
+    margin-top: 6%;
+}
+.sKeyboard{
+    display: none;
+    pointer-events: none;
+}
+.lastValues{
+    position: relative;
+    height: 200px;
+    text-align: right;
+}
+.lastValues.showc{
+    height: 170px;
+}
+.vv{
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    width: 100%;
+    font-size: 20px;
+    opacity: 0.7;
+    max-height: 100%;
+    overflow:auto ;
+}
+.vv p{
+    user-select: text;
+    margin-right: 3%;
+    padding-top: 1%;
+}
+.vv::-webkit-scrollbar{
+    width: 2px;
+    background: none;
+}
+.vv::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 1px;
+}
+.btn{
+    display: flex;
+    padding: 1% 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.input form{
+    width: 100%;
+    margin: auto;
+}
+.input input{
+    text-align: right;
+    width: 86%;
+    margin-left: 7%;
+    font-size: 25px;
+    padding:0 5%;
+    user-select: all;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+}
+.input input::placeholder{
+    color: black;
+    opacity: 1;
+}
+.little{
+    font-size: 20px;
+    color: #525252;
+}
+.main{
+    color: #1098f3;
+}
+.mainM{
+    background-color: #1098f3;
+    color: white;
+}
+.btn:hover{
+    background: #dfdfdf;
+    transition: background 0.3s;
+}
+.mainM:hover{
+    background: #79c7fc;
+    transition: background 0.3s;
+}
