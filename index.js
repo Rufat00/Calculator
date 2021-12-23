@@ -30,6 +30,7 @@ function inputChange(){
 
 function insert(num){
     document.form.textview.value = document.form.textview.value + num;
+    inputChange()
 }
 function clean(){
     document.form.textview.value = ""; 
@@ -53,6 +54,7 @@ function rClean(){
         cleanB.insertAdjacentText('beforeend','AC')
         clean();
     }
+    inputChange()
 }
 function back(){
     let exp = document.form.textview.value;
@@ -65,9 +67,11 @@ function back(){
         cleanB.innerHTML="";
         cleanB.insertAdjacentText('beforeend','C')
     }
+    inputChange()
 }
 function sqrt(){
     document.form.textview.value = Math.sqrt(eval(document.form.textview.value));
+    inputChange()
 }
 function fact(n){
     let fac = 1
@@ -80,6 +84,7 @@ function fact(n){
 }
 function facto(){
     fact(+eval(document.form.textview.value))
+    inputChange()
 }
 
 function equal(){
@@ -99,6 +104,7 @@ function equal(){
 
         newElement.innerHTML = lastValue[lastValue.length-1]
         vv.append(newElement);
+        inputChange()
         save();
         historySave();
         if(document.form.textview.value == null){
@@ -190,6 +196,7 @@ function show(){
             <div class="btn mainM" onclick="equal()">=</div>`);
             cleanB = document.querySelector('#cleanBtn')
         }
+        inputChange()
         cleanB = document.querySelector('#cleanBtn')
 }
 function save(){
